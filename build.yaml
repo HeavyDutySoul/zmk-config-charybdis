@@ -13,4 +13,5 @@
 #
 ---
 include:
-   - board: [charybdis_left, charybdis_right]
+   - board: charybdis_left
+   - board: charybdis_right
