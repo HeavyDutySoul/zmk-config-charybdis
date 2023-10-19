@@ -30,11 +30,12 @@
 / {
         keymap {
                 compatible = "zmk,keymap";
-
-                default_layer {
+				
+				Default {
+                	label = "Default";
                       bindings = <
     
-                     ESCT     FN1      FN2      FN3      FN4      FN5                              FN6     FN7      FN8      FN9      FN10     FN11
+                     ESCT     FN1      FN2      FN3      FN4      FN5                             FN6     FN7      FN8      FN9      FN10    FN11
 
                    &kp TAB   &kp Q    &kp W    &kp E    &kp R    &kp T                            &kp Y   &kp U    &kp I    &kp O    &kp P   &kp LBKT
 
@@ -42,17 +43,18 @@
 
                   &kp LSHFT  &kp Z    &kp X    &kp C    &kp V    &kp B   &kp LPAR      &kp RPAR   &kp N   &kp M  &kp COMMA &kp DOT &kp SLASH &kp RSHFT
 
-                                           &mo ADJ  &kp LGUI  &mo RSE  &kp SPACE        &kp ENTER  &mo LWR 
+                                           &mo ADJ  &kp LGUI  &mo RSE    &kp SPACE     &kp ENTER  &mo LWR 
                        >;
                        trackball-bindings = <&tmv_coarse>;
                 };
 
-                lower_layer {
-                      bindings = <
+   				Lower {
+                	label = "Lower";
+                	bindings = <
 
-                  &kp GRAVE &kp EXCL  &kp AT  &kp HASH &kp DLLR &kp PRCNT                      &kp CARET &kp AMPS &kp STAR &kp LPRN &kp RPRN &kp UNDER  
+                  &kp GRAVE &kp EXCL  &kp AT  &kp HASH &kp DLLR &kp PRCNT                        &kp CARET &kp AMPS &kp STAR &kp LPRN &kp RPRN &kp UNDER  
 
-                    ______   &kp AT  &kp HASH &kp DLLR &kp CARET &kp STAR                        ______   ______   ______   ______   ______   ______
+                    ______   &kp AT  &kp HASH &kp DLLR &kp CARET &kp STAR                        &to 4    ______   ______   ______   ______   ______
 
                      CPW   &kp QMARK  XXXXXX  &kp LBKT &kp RBKT &kp COLN                         ______   ______   ______   ______   ______   ______
 
@@ -63,12 +65,13 @@
                        trackball-bindings = <&tmv_fine>; 
                 };
 
-                raise_layer {
-                     bindings = <
+				Raise {
+            		label = "Raise";
+              		bindings = <
 
-                    ______   XXXXXX   XXXXXX   XXXXXX   XXXXXX   XXXXXX                        &kp PSCRN  XXXXXX   XXXXXX   XXXXXX   XXXXXX   &kp EQL
+                    ______   XXXXXX   XXXXXX   XXXXXX   XXXXXX   XXXXXX                          &kp PSCRN  XXXXXX   XXXXXX   XXXXXX   XXXXXX   &kp EQL
 
-                    ______   ______   ______   ______   ______   ______                         &kp INS   &kp N7   &kp N8   &kp N9   XXXXXX  &kp RBKT
+                    ______   ______   ______   ______   ______   ______                          &kp INS   &kp N7   &kp N8   &kp N9   XXXXXX  &kp RBKT
 
                     ______   ______   ______   ______   ______   ______                          &kp DEL  &kp N4   &kp N5   &kp N6   &kp LT   &kp GT
 
@@ -79,9 +82,10 @@
                       >;
                       trackball-bindings = <&tsl_fine>;
                 };
-
-                adjust_layer {
-                     bindings = <
+				
+				Adjust {
+            		label = "Adjust";
+                    bindings = <
 
                     ______   Z_BT_0   Z_BT_1   Z_BT_2   Z_BT_3   Z_BT_4                          Z_VUP    XXXXXX   XXXXXX   XXXXXX   XXXXXX   XXXXXX
 
@@ -91,7 +95,24 @@
 
                     ______   ______   ______   ______   ______   Z_BOOT   &vim_s        &vim_q   Z_BOOT   ______    ______   ______  &kp BSLH  ______
 
-                                            ______   ______   ______    ______          ______    ______   
+                                            ______   ______   ______    ______          ______   ______   
+
+                      >;
+                      trackball-bindings = <&tmv_fine>;
+                };
+
+				Mouse {
+                     bindings = <
+
+                    ______   ______   ______   ______   ______   ______                          ______   XXXXXX   XXXXXX   XXXXXX   XXXXXX   XXXXXX
+
+                    ______   ______   ______   ______   ______   ______                          ______   ______   ______   ______   ______   ______
+
+                    ______   ______   ______   ______   ______   ______                          ______   ______   ______   ______   ______   ______
+
+                    ______   ______   ______   ______   ______   ______   ______        &mkp LCLK ______   ______   ______   ______   ______   ______
+
+                                               ______   ______   ______   ______        &mkp RCLK  ______   
 
                       >;
                       trackball-bindings = <&tmv_fine>;
