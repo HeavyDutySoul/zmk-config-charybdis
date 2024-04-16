@@ -2,4 +2,4 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: victorlucachi/zmk/.github/workflows/build-user-config.yml@pmw3610-aml
+    uses:  HeavyDutySoul/charybdis/.github/workflows/build-user-config.yml@main
