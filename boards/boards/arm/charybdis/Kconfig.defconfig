@@ -1,7 +1,7 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if BOARD_CHARYBDIS_RIGHT
+if BOARD_CHARYBDIS_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "Charybdis"
@@ -9,7 +9,7 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
   default y
 
-endif # BOARD_CHARYBDIS_RIGHT
+endif # BOARD_CHARYBDIS_LEFT
 
 if BOARD_CHARYBDIS_LEFT || BOARD_CHARYBDIS_RIGHT
 

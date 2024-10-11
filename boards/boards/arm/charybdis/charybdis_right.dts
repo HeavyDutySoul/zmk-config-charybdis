@@ -8,6 +8,7 @@
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "charybdis.dtsi"
+#include "charybdis_pmw3360.dtsi"
 
 / {
 
