@@ -45,7 +45,7 @@
 
                                            &mo ADJ  &kp LGUI  &mo RSE    &kp SPACE     &kp ENTER  &mo LWR 
                        >;
-                       trackball-bindings = <&tmv_coarse>;
+                       //trackball-bindings = <&tmv_coarse>;
                 };
 
    				Lower {
@@ -62,7 +62,7 @@
 
                                             ______   ______   ______      ______        ______   ______
                        >;
-                       trackball-bindings = <&tmv_fine>; 
+                       //trackball-bindings = <&tmv_fine>; 
                 };
 
 				Raise {
@@ -98,7 +98,7 @@
                                             ______   ______   ______    ______          ______   ______   
 
                       >;
-                      trackball-bindings = <&tmv_fine>;
+                      //trackball-bindings = <&tmv_fine>;
                 };
 
 				Mouse {
@@ -116,7 +116,7 @@
                                                ______   ______   ______   ______       &mkp RCLK ______   
 
                       >;
-                      trackball-bindings = <&tmv_fine>;
+                      //trackball-bindings = <&tmv_fine>;
                 };
         };
 
