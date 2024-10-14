@@ -20,5 +20,4 @@
 include:
    - board: charybdis_left
      snippet: studio-rpc-usb-uart
-     cmake-args: -DCONFIG_ZMK_STUDIO=y
    - board: charybdis_right
