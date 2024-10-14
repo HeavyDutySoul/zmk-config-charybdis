@@ -3,6 +3,10 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
+config BOARD_CHARYBDIS
+	bool "charubdis"
+	depends on SOC_NRF52840_QIAA
+
 config BOARD_CHARYBDIS_LEFT
 	bool "charybdis_left"
 	depends on SOC_NRF52840_QIAA
