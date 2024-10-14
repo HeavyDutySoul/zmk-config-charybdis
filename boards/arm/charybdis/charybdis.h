@@ -5,7 +5,7 @@
 
 #define Z_BOOT &bootloader
 #define Z_OFF  &soft_off
-#define Z_RST  &reset
+#define Z_RST  &sys_reset
 #define Z_BT_0 &bt BT_SEL 0
 #define Z_BT_1 &bt BT_SEL 1
 #define Z_BT_2 &bt BT_SEL 2
