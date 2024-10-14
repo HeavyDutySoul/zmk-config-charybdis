@@ -61,3 +61,8 @@ CONFIG_BT_GAP_AUTO_UPDATE_CONN_PARAMS=n
 CONFIG_ZMK_USB=n
 
 CONFIG_ZMK_EXT_POWER=n
+
+CONFIG_SETTINGS=y
+CONFIG_ZMK_SETTINGS_RESET_ON_START=y
+# Disable BLE so splits don't try to re-pair until normal firmware is flashed.
+CONFIG_ZMK_BLE=n
