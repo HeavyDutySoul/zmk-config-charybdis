@@ -27,9 +27,14 @@
     continue-list = <UNDER MINUS BSPC>;
 };
 
-/ {
+/ {     
+        trackball_listener {
+          compatible = "zmk,input-listener";
+          device = <&vtrackball>;
+        };
+
         keymap {
-                compatible = "zmk,keymap";
+          compatible = "zmk,keymap";
 				
 				Default {
                 	label = "Default";
