@@ -7,7 +7,7 @@
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
 #include "charybdis.dtsi"
-#include "charybdis_pmw3360.dtsi"
+#include "charybdis_pmw3610.dtsi"
 
 &default_transform {
 	col-offset = <6>;
