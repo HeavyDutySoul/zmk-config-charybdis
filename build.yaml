@@ -31,6 +31,6 @@ include:
      cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000 -DCONFIG_ZMK_LOG_LEVEL_DBG=y -DCONFIG_CBPRINTF_COMPLETE=y
      artifact-name: charybdis_right_zmk_dbg
    - board: charybdis_left
-     shield: settings_reset
+     cmake-args: -DCONFIG_SETTINGS=y -DCONFIG_ZMK_SETTINGS_RESET_ON_START=y -DCONFIG_ZMK_BLE=n
      artifact-name: charybdis_left_sr
 
