@@ -28,14 +28,10 @@
         ;
 };
 
-/ {
-    vtrackball: virtual_input_trackball {
-        compatible = "zmk,virtual-input";
-    };
+zephyr_udc0: &usb0 {
+        status = "okay";
 
-    input_relay_config_trackball {
-        compatible = "zmk,split-peripheral-input-relay";
-        device = <&vtrackball>;
-        relay-channel = <102>;
-    };
+        pinctrl-0 = <&usb_dc_default>;
+        pinctrl-names = "default";
 };
+
