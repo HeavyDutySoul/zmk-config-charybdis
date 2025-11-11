@@ -1,8 +1,16 @@
+#include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
 / {
+    model = "CHARYBDIS";
+    compatible = "charybdis";
+
     chosen {
+        zephyr,code-partition = &code_partition;
+        zephyr,sram = &sram0;
+        zephyr,flash = &flash0;
+        zmk,battery = &vbatt;
         zmk,kscan = &kscan0;
         zmk,physical-layout = &charybdis_6col_layout;
     };
