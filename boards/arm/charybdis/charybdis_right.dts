@@ -38,10 +38,16 @@
     status = "okay";
 };
 
-zephyr_udc0: &usb0 {
-        status = "okay";
-        pinctrl-0 = <&usb_dc_default>;
-        pinctrl-names = "default";
+&uart0 {
+    compatible = "nordic,nrf-uarte";
+    current-speed = <115200>;
+    pinctrl-0 = <&uart0_default>;
+    pinctrl-1 = <&uart0_sleep>;
+    pinctrl-names = "default", "sleep";
+};
+
+zephyr_udc0: &usbd {
+    status = "okay";
 };
 
 &trackball_split {
