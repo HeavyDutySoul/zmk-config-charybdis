@@ -49,6 +49,6 @@ config ZMK_KEYBOARD_NAME
   default "SETTINGS RESET"
 
 config BOARD
-  default "charybdis"
+ default "charybdis_left_sr"
 
 endif
