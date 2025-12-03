@@ -43,7 +43,7 @@ include:
       -DCONFIG_ZMK_LOG_LEVEL_DBG=y
       -DCONFIG_CBPRINTF_COMPLETE=y
       -DCONFIG_LOG_MAX_LEVEL=4
-	  -DCONFIG_PMW3610_LOG_LEVEL_DBG=y
+      -DCONFIG_PMW3610_LOG_LEVEL_DBG=y
      artifact-name: charybdis_right_dbg
    - board: charybdis_left_sr
      snippet: nrf52840-nosd
