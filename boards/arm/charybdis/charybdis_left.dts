@@ -8,6 +8,7 @@
 #include <nordic/nrf52840_qiaa.dtsi>
 #include "charybdis.dtsi"
 #include "charybdis_pmw3610.dtsi"
+#include "split_input_common.dtsi"
 
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
