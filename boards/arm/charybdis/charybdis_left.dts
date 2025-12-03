@@ -7,7 +7,7 @@
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
 #include "charybdis.dtsi"
-#include "charubdis_pmw3610.dtsi"
+#include "charybdis_pmw3610.dtsi"
 
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
