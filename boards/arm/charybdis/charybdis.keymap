@@ -66,6 +66,7 @@
         <&kp>,
         <&kp>;
     };
+
     hml_s: hml_s {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -100,7 +101,17 @@
       bindings = <&sk LSHIFT>, <&caps_word>;
       mods = <(MOD_LSFT)>;
     };
-  };
+
+    dpi_cycle: sensor_dpi_cycle {
+      compatible = "zmk,behavior-sensor-attr-cycle";
+      #binding-cells = <1>;
+      values = < 100 300 600 900 1200 >;
+      attr = <0>;
+      sensor_device = <&trackball>;
+      display-name = "DPI cycle";
+      persistant;
+   };
+ };
 
   combos {
     compatible = "zmk,combos";
@@ -181,7 +192,7 @@
         &trans   &trans   &trans   &trans    &trans    &trans            &trans &trans   &trans   &trans   &trans     &trans
         &trans   &trans   &trans   &trans    &trans    &trans            &trans &trans   &trans   &trans   &trans     &trans 
         &trans   &kp LGUI &kp LALT &kp LSHFT &kp LCTRL &trans            &trans &mkp MB1 &mkp MB2 &mkp MB3 &trans     &trans
-        &trans   &trans   &trans   &mo 3     &mo 2     &trans            &trans &trans   &dpi_cycle &trans   &trans     &trans
+        &trans   &trans   &trans   &mo 3     &mo 2     &trans            &trans &trans   &dpi_cycle&trans   &trans     &trans
                  &mkp MB1 &mkp MB2 &mkp MB3  &trans    &trans            &trans &trans   &trans                   
       >;
     };
