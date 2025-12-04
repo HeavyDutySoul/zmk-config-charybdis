@@ -47,3 +47,19 @@ include:
    - board: charybdis_left_sr
      snippet: nrf52840-nosd
      artifact-name: charybdis_left_softreset
+   - board: nrf52840dongle_nrf52840
+     shell: charybdis_dongle
+     snippet: nrf52840-nosd studio-rpc-usb-uart
+     cmake-args: >-
+      -DCONFIG_ZMK_STUDIO=y
+      -DCONFIG_ZMK_STUDIO_LOCKING=n
+     artifact-name: charybdis_dongle
+   - board: nrf52840dongle_nrf52840
+     shell: charybdis_dongle
+     snippet: nrf52840-nosd zmk-usb-logging
+     cmake-args: >-
+      -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+      -DCONFIG_ZMK_LOG_LEVEL_DBG=y
+      -DCONFIG_CBPRINTF_COMPLETE=y
+      -DCONFIG_LOG_MAX_LEVEL=4
+     artifact-name: charybdis_dongle_dbg
