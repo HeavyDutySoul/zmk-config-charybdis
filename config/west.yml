@@ -6,14 +6,19 @@ manifest:
       url-base: https://github.com/badjeff
     - name: george-norton
       url-base: https://github.com/george-norton
+    - name: efogdev
+      url-base: https://github.com/efogdev
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
+#    - name: zmk-pmw3610-driver
+#      remote: badjeff
+#      revision: main
     - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
+      remote: efogdev
+      revision: zephyr-4.1
 #    - name: zmk-driver-pmw3360
 #      remote: george-norton
 #      revision: v0.3
