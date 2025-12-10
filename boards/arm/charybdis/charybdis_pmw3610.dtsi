@@ -52,7 +52,7 @@
         y-input-code = <INPUT_REL_Y>;
         force-awake;
         force-high-performance;
-        enable-pm-support;
+//        enable-pm-support;
 		    xy-swap;
 		    x-invert;
 		    y-invert;
