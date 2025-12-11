@@ -27,8 +27,8 @@ manifest:
 #    - name: zmk-behavior-sensor-attr-cycle
 #      remote: george-norton
 #      revision: v0.3
-    - name: zmk-pointing-acceleration-alpha
-      remote: nuovotaka
-      revision: main
+#    - name: zmk-pointing-acceleration-alpha
+#      remote: nuovotaka
+#      revision: main
   self:
     path: config
