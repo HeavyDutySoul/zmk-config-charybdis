@@ -32,4 +32,5 @@
 
 &trackball_listener {
   status = "okay";
+  input-processors = <&pointer_accel>;
 };
