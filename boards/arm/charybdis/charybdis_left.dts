@@ -7,7 +7,6 @@
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
 #include "charybdis.dtsi"
-//#include "charybdis_pmw3610.dtsi"
 #include "split_input_common.dtsi"
 
 &kscan0 {
@@ -27,7 +26,8 @@
         , <&gpio1 10 (GPIO_ACTIVE_HIGH )>
         , <&gpio1 13  (GPIO_ACTIVE_HIGH )>
         , <&gpio0 10  (GPIO_ACTIVE_HIGH )>
-        ;
+    ;
+    wakeup-source;
 };
 
 &trackball_listener {
