@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/george-norton
     - name: efogdev
       url-base: https://github.com/efogdev
+    - name: nuovotaka
+      url-base: https://github.com/nuovotaka
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -25,5 +27,8 @@ manifest:
 #    - name: zmk-behavior-sensor-attr-cycle
 #      remote: george-norton
 #      revision: v0.3
+    - name: zmk-pointing-acceleration-alpha
+      remote: nuovotaka
+      revision: main
   self:
     path: config
