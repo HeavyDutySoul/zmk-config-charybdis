@@ -28,7 +28,3 @@
     ;
     wakeup-source;
 };
-
-&trackball_listener {
-  status = "okay";
-};
