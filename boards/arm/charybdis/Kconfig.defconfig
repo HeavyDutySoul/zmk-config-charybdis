@@ -20,7 +20,7 @@ config ZMK_SPLIT
   default y
 
 config ZMK_SPLIT_BLE
-  default y
+  select y
 
 config BT_CTLR
   default BT
