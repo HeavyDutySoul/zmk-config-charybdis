@@ -33,7 +33,6 @@
         , <&gpio0 9   GPIO_ACTIVE_HIGH>
         , <&gpio1 10  GPIO_ACTIVE_HIGH>
     ;
-    wakeup-source;
 };
 
 &spi0 {
