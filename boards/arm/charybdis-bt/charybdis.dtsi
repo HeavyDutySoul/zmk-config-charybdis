@@ -1,4 +1,4 @@
-#include <nordic/nrf52840_qiaa.dtsi>
+k#include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 #include <input/processors.dtsi>
@@ -132,6 +132,16 @@
                 ;
         };
     };
+	
+	split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split: trackball_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+		};
+	};		
 };
 
 &adc {
@@ -151,6 +161,13 @@
     status = "okay";
     gpiote-instance = <&gpiote>;
 };
+split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackball_split: trackball_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
 
 
 &pinctrl {
