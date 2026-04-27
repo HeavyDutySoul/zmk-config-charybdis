@@ -132,16 +132,6 @@ k#include <nordic/nrf52840_qiaa.dtsi>
                 ;
         };
     };
-	
-	split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-        trackball_split: trackball_split@0 {
-            compatible = "zmk,input-split";
-            reg = <0>;
-		};
-	};		
 };
 
 &adc {
