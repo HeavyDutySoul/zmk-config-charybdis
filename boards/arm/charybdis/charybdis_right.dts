@@ -9,7 +9,6 @@
 #include "charybdis.dtsi"
 #include "charybdis_pmw3610.dtsi"
 #include "split_input_common.dtsi"
-#include <dt-bindings/zmk/input_transform.h>
 
 &default_transform {
 	col-offset = <6>;
@@ -35,11 +34,6 @@
     ;
 };
 
-&spi0 {
-    status = "okay";
-};
-
 &trackball_split {
     device = <&trackball>;
-    status = "okay";
 };
