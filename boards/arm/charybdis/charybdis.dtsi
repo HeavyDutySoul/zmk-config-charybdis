@@ -144,13 +144,15 @@
 
 &gpio0 {
     status = "okay";
+    gpiote-instance = <&gpiote>;
 };
 
 &gpio1 {
     status = "okay";
+    gpiote-instance = <&gpiote>;
 };
 
-/*
+
 &pinctrl {
     uart0_default: uart0_default {
         group1 {
@@ -178,7 +180,6 @@
     pinctrl-1 = <&uart0_sleep>;
     pinctrl-names = "default", "sleep";
 };
-*/
  
 zephyr_udc0: &usbd {
     status = "okay";
