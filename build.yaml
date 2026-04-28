@@ -20,10 +20,11 @@
 include:
    - board: nrf52840dongle_nrf52840
      shell: charybdis_dongle
-     snippet: nrf52840-nosd studio-rpc-usb-uart
-     cmake-args: >-
-      -DCONFIG_ZMK_STUDIO=y
-      -DCONFIG_ZMK_STUDIO_LOCKING=n
+     snippet: nrf52840-nosd
+#     snippet: nrf52840-nosd studio-rpc-usb-uart
+#     cmake-args: >-
+#      -DCONFIG_ZMK_STUDIO=y
+#      -DCONFIG_ZMK_STUDIO_LOCKING=n
      artifact-name: charybdis_dongle
    - board: charybdis_right
      snippet: nrf52840-nosd
