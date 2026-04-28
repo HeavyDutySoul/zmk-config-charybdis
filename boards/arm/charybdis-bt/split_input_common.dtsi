@@ -9,10 +9,20 @@
 #define GENSHIN 5 
 
 / {
+  split_inputs {
+    #address-cells = <1>;
+    #size-cells = <0>;
+
+    trackball_split: trackball_split@0 {
+      compatible = "zmk,input-split";
+      reg = <0>;
+    };
+  };
+
   trackball_listener: trackball_listener {
     compatible = "zmk,input-listener";
     status = "disabled";
-    device = <&trackball>;
+    device = <&trackball_split>;
 
     snipe {
       layers = <NUM>;
@@ -37,3 +47,4 @@
     #excluded-positions = <30 31 32 16 17 18 10 11 12 13 22 23>;
   };
 };
+
