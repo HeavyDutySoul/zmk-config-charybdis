@@ -19,18 +19,15 @@
 ---
 include:
    - board: charybdis_right
-     format: bt
      snippet: nrf52840-nosd studio-rpc-usb-uart
      cmake-args: >-
       -DCONFIG_ZMK_STUDIO=y
       -DCONFIG_ZMK_STUDIO_LOCKING=n
      artifact-name: charybdis_right
    - board: charybdis_left
-     format: bt
      snippet: nrf52840-nosd
      artifact-name: charybdis_left
    - board: charybdis_right
-     format: bt
      snippet: nrf52840-nosd zmk-usb-logging
      cmake-args: >-
       -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
@@ -40,7 +37,6 @@ include:
       -DCONFIG_PMW3610_LOG_LEVEL_DBG=y
      artifact-name: charybdis_right_dbg
    - board: charybdis_left
-     format: bt
      snippet: nrf52840-nosd zmk-usb-logging
      cmake-args: >-
       -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
@@ -49,6 +45,5 @@ include:
       -DCONFIG_LOG_MAX_LEVEL=4
      artifact-name: charybdis_left_dbg
    - board: charybdis_left_sr
-     format: bt
      snippet: nrf52840-nosd
      artifact-name: charybdis_reset
