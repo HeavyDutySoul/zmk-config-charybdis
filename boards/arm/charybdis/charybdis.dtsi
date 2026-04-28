@@ -39,6 +39,7 @@
   
     kscan0: kscan {
         diode-direction = "row2col";
+        wakeup-source;
     };
 
     charybdis_6col_layout: charybdis_6col_layout {
@@ -143,10 +144,12 @@
 
 &gpio0 {
     status = "okay";
+    gpiote-instance = <&gpiote>;
 };
 
 &gpio1 {
     status = "okay";
+    gpiote-instance = <&gpiote>;
 };
 
 &pinctrl {

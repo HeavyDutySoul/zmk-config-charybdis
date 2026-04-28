@@ -1,15 +1,15 @@
 # Copyright (c) 2021 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if BOARD_CHARYBDIS_LEFT
+if BOARD_CHARYBDIS_RIGHT
 
 config ZMK_KEYBOARD_NAME
   default "Charybdis"
 
-config ZMK_SPLIT_ROLE_CENTRAL
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
   default y
 
-endif # BOARD_CHARYBDIS_LEFT
+endif # BOARD_CHARYBDIS_RIGHT
 
 if BOARD_CHARYBDIS_LEFT || BOARD_CHARYBDIS_RIGHT
 
@@ -19,17 +19,11 @@ config BOARD
 config ZMK_SPLIT
   default y
 
-config BT_CTLR
-  default BT
-
 config ZMK_BLE
   default y
 
 config ZMK_USB
   default n
-
-config ZMK_BATTERY_VOLTAGE_DIVIDER
-  default y
 
 if USB
 

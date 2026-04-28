@@ -1,24 +1,16 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: badjeff
-      url-base: https://github.com/badjeff
-    - name: george-norton
-      url-base: https://github.com/george-norton
+      url-base: https://github.com/zampierilucas
+    - name: efogdev
+      url-base: https://github.com/efogdev
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: feat/individual-hid-battery-reporting
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: badjeff
-      revision: main
-#    - name: zmk-driver-pmw3360
-#      remote: george-norton
-#      revision: v0.3
-#    - name: zmk-behavior-sensor-attr-cycle
-#      remote: george-norton
-#      revision: v0.3
+      remote: efogdev
+      revision: zephyr-4.1
   self:
     path: config
