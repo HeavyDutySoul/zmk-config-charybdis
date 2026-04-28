@@ -33,7 +33,7 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &spi0 {
-    status = "okay";
+    status = "disabled";
     compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
@@ -41,7 +41,7 @@
     cs-gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
 
     trackball: trackball@0 {
-        status = "okay";
+        status = "disabled";
         compatible = "pixart,pmw3610-efogtech";
         reg = <0>;
         spi-max-frequency = <2000000>;
