@@ -19,7 +19,7 @@
 ---
 include:
    - board: nrf52840dongle_nrf52840
-     shell: charybdis_dongle
+     shield: charybdis_dongle
      snippet: nrf52840-nosd studio-rpc-usb-uart
      cmake-args: >-
       -DCONFIG_ZMK_STUDIO=y
