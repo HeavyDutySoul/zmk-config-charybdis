@@ -6,7 +6,8 @@
 #define SYM 2
 #define NUM 3
 #define FN 4
-#define GENSHIN 5 
+#define GAME 5 
+#define RST 6
 
 / {
   split_inputs {
