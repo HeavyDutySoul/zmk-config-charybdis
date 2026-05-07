@@ -25,6 +25,16 @@ include:
       -DCONFIG_ZMK_STUDIO=y
       -DCONFIG_ZMK_STUDIO_LOCKING=n
      artifact-name: charybdis_dongle
+   - board: nrf52840dongle_nrf52840
+     shield: charybdis_dongle
+     snippet: nrf52840-nosd zmk-usb-logging
+     cmake-args: >-
+      -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+      -DCONFIG_ZMK_LOG_LEVEL_DBG=y
+      -DCONFIG_CBPRINTF_COMPLETE=y
+      -DCONFIG_LOG_MAX_LEVEL=4
+      -DCONFIG_PMW3610_LOG_LEVEL_DBG=y
+     artifact-name: charybdis_dongle_dbg
    - board: charybdis_right
      snippet: nrf52840-nosd
      artifact-name: charybdis_right
@@ -48,6 +58,10 @@ include:
       -DCONFIG_CBPRINTF_COMPLETE=y
       -DCONFIG_LOG_MAX_LEVEL=4
      artifact-name: charybdis_left_dbg
-   - board: charybdis_left_sr
+   - board: nrf52840dongle_nrf52840
+     shield: settings_reset
      snippet: nrf52840-nosd
      artifact-name: charybdis_reset
+
+
+
