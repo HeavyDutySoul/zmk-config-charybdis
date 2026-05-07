@@ -16,13 +16,3 @@ config ZMK_USB
   default n
 
 endif # BOARD_CHARYSBDIS_LEFT || BOARD_CHARYBDIS_RIGHT
-
-if BOARD_CHARYBDIS_LEFT_SR
-
-config ZMK_KEYBOARD_NAME
-  default "SETTINGS RESET"
-
-config BOARD
- default "charybdis"
-
-endif

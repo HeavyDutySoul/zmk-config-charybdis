@@ -7,7 +7,3 @@ boards:
     vendor: bastardkb
     socs:
       - name: nrf52840
-  - name: charybdis_left_sr
-    vendor: bastardkb
-    socs:
-      - name: nrf52840
