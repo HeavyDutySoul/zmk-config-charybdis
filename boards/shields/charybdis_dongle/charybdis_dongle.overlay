@@ -3,6 +3,8 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,battery-reporting = &battery_reporting;
+
     };
 
     mock_kscan: kscan_1 {
@@ -12,7 +14,7 @@
         events = <0>;
     };
 
-	battery_reporting: battery_reporting {
+    battery_reporting: battery_reporting {
         compatible = "zmk,battery-reporting";
 
         dongle {
