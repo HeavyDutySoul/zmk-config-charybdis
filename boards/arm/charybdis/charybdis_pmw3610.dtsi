@@ -54,6 +54,5 @@
         x-invert;
         y-invert;
         force-awake;
-        enable-pm-support;
     };
 };
